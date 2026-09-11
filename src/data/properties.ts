@@ -1,0 +1,522 @@
+import { Property } from '../types/property';
+
+export const PROPERTIES_DATA: Property[] = [
+  {
+    id: 'radhe-prop-01',
+    title: 'The Haveli Courtyard Villa',
+    slug: 'the-haveli-courtyard-villa-civil-lines',
+    tagline: 'Modern Rajputana Grandeur Meets Stately Civil Lines Living',
+    category: 'residential',
+    type: 'Luxury Villa',
+    price: 68500000,
+    priceDisplay: '₹ 6.85 Cr',
+    pricePerSqFt: '₹ 14,270 / sq.ft.',
+    location: 'Civil Lines',
+    address: 'Near Raj Bhavan Road, Civil Lines, Jaipur',
+    city: 'Jaipur',
+    state: 'Rajasthan',
+    areaSqFt: 4800,
+    carpetAreaSqFt: 4100,
+    bedrooms: 5,
+    bathrooms: 6,
+    parking: 3,
+    facing: 'East Facing (Vastu Compliant)',
+    furnishing: 'Semi-Furnished',
+    status: 'Ready to Move',
+    possessionDate: 'Immediate',
+    reraNumber: 'RAJ/P/2024/0981 (Verified)',
+    featured: true,
+    heroImage: 'https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=1600&auto=format&fit=crop&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=1600&auto=format&fit=crop&q=80',
+      'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1600&auto=format&fit=crop&q=80',
+      'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1600&auto=format&fit=crop&q=80',
+      'https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?w=1600&auto=format&fit=crop&q=80'
+    ],
+    editorialNote: 'A bespoke multi-level residence commissioned for discerning families seeking exclusivity, quiet tree-lined avenues, and effortless proximity to Jaipur’s VIP corridors.',
+    description: 'Set within the distinguished precinct of Civil Lines, this bespoke 5 BHK villa marries contemporary brutalist geometry with Rajasthan’s timeless courtyard spatiality. Vaulted 14-foot ceilings, imported Italian Statuario marble, a sunken central courtyard with water cascades, and a temperature-controlled plunge pool define the residential journey. Crafted for both intimate family life and high-profile entertaining.',
+    architecturalHighlights: [
+      'Central climate-moderating courtyard with artisanal jali screen detailing',
+      'Double-height formal living salon overlooking a private reflexology garden',
+      'Private master wing featuring dual walk-in dressing suites and jacuzzi',
+      'Integrated home automation controlling mood lighting, VRV climate, and multi-tier security'
+    ],
+    amenities: [
+      'Private Plunge Pool',
+      'Italian Marble Flooring',
+      'VRV Air Conditioning',
+      'Private Elevator',
+      'Triple Covered Parking',
+      'Staff Quarters with Bath',
+      'Rooftop Stargazing Lounge',
+      '100% Power Backup',
+      '3-Tier Biometric Security'
+    ],
+    nearbyLandmarks: [
+      { name: 'Civil Lines Metro Station', distance: '800 m', category: 'Metro' },
+      { name: 'Raj Bhavan Enclave', distance: '1.2 km', category: 'Business' },
+      { name: 'SMS Hospital', distance: '4.5 km', category: 'Hospital' },
+      { name: 'Jaipur International Airport', distance: '11.8 km', category: 'Airport' }
+    ]
+  },
+  {
+    id: 'radhe-prop-02',
+    title: 'The Skyview Penthouse at Central Park',
+    slug: 'skyview-penthouse-central-park-c-scheme',
+    tagline: 'Panoramic Horizon Living Above Jaipur’s Cultural Downtown',
+    category: 'residential',
+    type: 'Sky Penthouse',
+    price: 49500000,
+    priceDisplay: '₹ 4.95 Cr',
+    pricePerSqFt: '₹ 13,026 / sq.ft.',
+    location: 'C-Scheme',
+    address: 'Near Statue Circle, C-Scheme, Jaipur',
+    city: 'Jaipur',
+    state: 'Rajasthan',
+    areaSqFt: 3800,
+    carpetAreaSqFt: 3250,
+    bedrooms: 4,
+    bathrooms: 5,
+    parking: 2,
+    facing: 'North-East Facing',
+    furnishing: 'Fully Furnished',
+    status: 'Ready to Move',
+    possessionDate: 'Ready for Occupancy',
+    reraNumber: 'RAJ/P/2023/1142 (Verified)',
+    featured: true,
+    heroImage: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=1600&auto=format&fit=crop&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=1600&auto=format&fit=crop&q=80',
+      'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1600&auto=format&fit=crop&q=80',
+      'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1600&auto=format&fit=crop&q=80',
+      'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1600&auto=format&fit=crop&q=80'
+    ],
+    editorialNote: 'An unrivaled skyline spectacle over Central Park and Statue Circle, presenting 270-degree unbroken views of Jaipur’s lush canopy and illuminated heritage monuments.',
+    description: 'Perched on the crown of an elite boutique tower in C-Scheme, this duplex Sky Penthouse is an entertainer’s paradise. It boasts wrap-around cantilevered glass terraces, bespoke European kitchens by Poggenpohl, private key-card elevator access directly into the foyer, and acoustic double-glazed curtain walls that keep city bustle entirely silent.',
+    architecturalHighlights: [
+      '270-degree wrap-around panoramic sky deck overlooking lush Central Park canopy',
+      'Double-height floor-to-ceiling structural glazing with thermal insulation',
+      'Direct private access via dedicated biometric high-speed elevator',
+      'Integrated home theatre lounge with acoustic timber wall paneling'
+    ],
+    amenities: [
+      'Private Sky Deck',
+      'Direct Elevator Access',
+      'Infinity Lap Pool (Tower)',
+      'Health Club & Spa',
+      'Concierge Desk',
+      'Valet Parking',
+      'EV Charging Stations',
+      '24/7 Monitored CCTV'
+    ],
+    nearbyLandmarks: [
+      { name: 'Statue Circle & Central Park', distance: '400 m', category: 'Leisure' },
+      { name: 'Albert Hall Museum', distance: '2.4 km', category: 'Leisure' },
+      { name: 'Santokba Durlabhji Memorial Hospital', distance: '2.1 km', category: 'Hospital' },
+      { name: 'Jaipur Junction Railway Station', distance: '3.2 km', category: 'Business' }
+    ]
+  },
+  {
+    id: 'radhe-prop-03',
+    title: 'The Royal Palm Estate Duplex',
+    slug: 'royal-palm-estate-duplex-vaishali-nagar',
+    tagline: 'Refined Contemporary Family Living in West Jaipur’s Premier Colony',
+    category: 'residential',
+    type: 'Luxury Villa',
+    price: 34500000,
+    priceDisplay: '₹ 3.45 Cr',
+    pricePerSqFt: '₹ 10,780 / sq.ft.',
+    location: 'Vaishali Nagar',
+    address: 'Amrapali Marg Ext., Vaishali Nagar, Jaipur',
+    city: 'Jaipur',
+    state: 'Rajasthan',
+    areaSqFt: 3200,
+    carpetAreaSqFt: 2750,
+    bedrooms: 4,
+    bathrooms: 4,
+    parking: 2,
+    facing: 'North Facing',
+    furnishing: 'Semi-Furnished',
+    status: 'Ready to Move',
+    possessionDate: 'Ready for Occupancy',
+    reraNumber: 'RAJ/P/2024/0415 (Verified)',
+    featured: true,
+    heroImage: 'https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=1600&auto=format&fit=crop&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=1600&auto=format&fit=crop&q=80',
+      'https://images.unsplash.com/photo-1600573472591-ee6b68d14c68?w=1600&auto=format&fit=crop&q=80',
+      'https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=1600&auto=format&fit=crop&q=80',
+      'https://images.unsplash.com/photo-1600210492493-0946911123ea?w=1600&auto=format&fit=crop&q=80'
+    ],
+    editorialNote: 'A sanctuary of light and clean lines situated off Amrapali Marg, combining community peace with instant access to top tier schools, gourmet dining, and retail.',
+    description: 'Conceived for modern joint or nuclear families who prize open layouts and green outdoor living, this 4 BHK duplex villa features a manicured private lawn, expansive skylit dining atrium, modular German kitchen with breakfast island, and expansive bedrooms with ensuite baths.',
+    architecturalHighlights: [
+      'Zen landscape front lawn and secluded rear terrace garden',
+      'Double-height skylit dining volume infusing natural ambient daylight',
+      'Engineered solid teak wood flooring across upper bedroom suites',
+      'Smart home infrastructure with solar water heating and rainwater harvesting'
+    ],
+    amenities: [
+      'Private Landscaped Garden',
+      'Gated Community Security',
+      'Clubhouse with Gymnasium',
+      'Solar Water Heating',
+      'Covered Double Garage',
+      'Separate Servant Room',
+      'Children Play Area'
+    ],
+    nearbyLandmarks: [
+      { name: 'National Handloom & Amrapali Plaza', distance: '1.0 km', category: 'Leisure' },
+      { name: 'Tagore Public School', distance: '1.5 km', category: 'Education' },
+      { name: 'Shalby Multi-Specialty Hospital', distance: '2.5 km', category: 'Hospital' },
+      { name: 'Ajmer Expressway Connection', distance: '2.8 km', category: 'Business' }
+    ]
+  },
+  {
+    id: 'radhe-prop-04',
+    title: 'Aura Signature High-Rise Residences',
+    slug: 'aura-signature-high-rise-jagatpura',
+    tagline: 'Boutique High-Rise Urban Condos Overlooking Green Belts',
+    category: 'residential',
+    type: 'Premium Apartment',
+    price: 18500000,
+    priceDisplay: '₹ 1.85 Cr',
+    pricePerSqFt: '₹ 7,872 / sq.ft.',
+    location: 'Jagatpura',
+    address: 'Near Mahal Road & Akshay Patra, Jagatpura, Jaipur',
+    city: 'Jaipur',
+    state: 'Rajasthan',
+    areaSqFt: 2350,
+    carpetAreaSqFt: 1980,
+    bedrooms: 3,
+    bathrooms: 3,
+    parking: 2,
+    facing: 'East Facing',
+    furnishing: 'Unfurnished',
+    status: 'Under Construction',
+    possessionDate: 'December 2025',
+    reraNumber: 'RAJ/P/2023/2219 (Verified)',
+    featured: true,
+    heroImage: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1600&auto=format&fit=crop&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1600&auto=format&fit=crop&q=80',
+      'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1600&auto=format&fit=crop&q=80',
+      'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=1600&auto=format&fit=crop&q=80'
+    ],
+    editorialNote: 'Jaipur’s fastest-appreciating southern residential hub, ideally positioned near the institutional sector, Bombay Hospital, and Jaipur International Airport.',
+    description: 'Offering 3 BHK luxury condominiums designed with zero-dead-space efficiency. Features wide 8-foot deck balconies, low-density 2 units per floor configuration, high-speed Otis elevators, and an expansive 30,000 sq.ft. club with squash courts, temperature-controlled pool, and co-working pod lounge.',
+    architecturalHighlights: [
+      'Only 2 bespoke residences per elevator landing for total privacy',
+      'Continuous 8-foot cantilevered sunset deck with glass balustrades',
+      'Energy-efficient IGBC Gold certified green building framework',
+      'Advanced acoustically insulated exterior brickwork'
+    ],
+    amenities: [
+      '30,000 sq.ft. Clubhouse',
+      'Olympic-Length Swimming Pool',
+      'Indoor Badminton & Squash Courts',
+      'Senior Citizen Reflexology Park',
+      'Co-Working Business Pods',
+      'Multi-tier 24/7 Security'
+    ],
+    nearbyLandmarks: [
+      { name: 'Bombay Hospital Jaipur', distance: '1.2 km', category: 'Hospital' },
+      { name: 'Akshaya Patra Temple', distance: '1.8 km', category: 'Leisure' },
+      { name: 'Jaipur International Airport', distance: '6.5 km', category: 'Airport' },
+      { name: 'SKIT Engineering Campus', distance: '2.0 km', category: 'Education' }
+    ]
+  },
+  {
+    id: 'radhe-prop-05',
+    title: 'The Sovereign Corporate Tower (Grade-A)',
+    slug: 'the-sovereign-corporate-tower-tonk-road',
+    tagline: 'Jaipur’s Flagship Commercial Landmark for Corporate Headquarters',
+    category: 'commercial',
+    type: 'Commercial Office',
+    price: 85000000,
+    priceDisplay: '₹ 8.50 Cr',
+    pricePerSqFt: '₹ 15,450 / sq.ft.',
+    location: 'Tonk Road',
+    address: 'Near Tonk Phatak & Gopalpura Flyover, Tonk Road, Jaipur',
+    city: 'Jaipur',
+    state: 'Rajasthan',
+    areaSqFt: 5500,
+    carpetAreaSqFt: 4650,
+    bedrooms: undefined,
+    bathrooms: 4,
+    parking: 6,
+    facing: 'North-East Main Arterial Facing',
+    furnishing: 'Unfurnished',
+    status: 'Ready to Move',
+    possessionDate: 'Ready for Fitouts',
+    reraNumber: 'RAJ/P/2022/0789 (Verified)',
+    featured: true,
+    heroImage: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1600&auto=format&fit=crop&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1600&auto=format&fit=crop&q=80',
+      'https://images.unsplash.com/photo-1497366216548-37526070297c?w=1600&auto=format&fit=crop&q=80',
+      'https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=1600&auto=format&fit=crop&q=80'
+    ],
+    editorialNote: 'A benchmark institutional workplace destination along Jaipur’s primary business spine, boasting unrivaled visibility and premier MNC tenancy.',
+    description: 'A full-floor Grade-A corporate office plate offering uninterrupted 12-meter column-free spans, double-glazed sound and thermal insulation, centralized HVAC, and multi-level basement stack parking. Ideal for regional headquarters, tech institutions, or private wealth family offices.',
+    architecturalHighlights: [
+      'High-performance double-glazed structural curtain wall reducing heat load by 40%',
+      'Column-free floor plates allowing hyper-flexible agile workstation planning',
+      'Triple-height grand marble reception lobby with revolving security barriers',
+      '100% DG backup redundancy with dual power grids'
+    ],
+    amenities: [
+      'Triple-Height Grand Lobby',
+      'High-Speed Destination Lifts',
+      'Centralized VRV Chiller System',
+      '6 Dedicated Reserved Stalls',
+      'Conference & Auditorium Suite',
+      'Cafeteria & Terrace Garden',
+      'BMS Automated Building Control'
+    ],
+    nearbyLandmarks: [
+      { name: 'Gopalpura Metro Connector', distance: '700 m', category: 'Metro' },
+      { name: 'World Trade Park (WTP)', distance: '3.8 km', category: 'Leisure' },
+      { name: 'Jaipur International Airport', distance: '7.5 km', category: 'Airport' },
+      { name: 'SMS Stadium', distance: '3.5 km', category: 'Leisure' }
+    ]
+  },
+  {
+    id: 'radhe-prop-06',
+    title: 'The Orchard Estate Gated Villa Plots',
+    slug: 'the-orchard-estate-gated-plots-mansarovar-ext',
+    tagline: 'Prime Plotted Enclave in South-West Jaipur’s Fastest Growing Axis',
+    category: 'plots',
+    type: 'Residential Plot',
+    price: 13500000,
+    priceDisplay: '₹ 1.35 Cr',
+    pricePerSqFt: '₹ 4,500 / sq.ft.',
+    location: 'Mansarovar Extension',
+    address: 'Near Muhana Road, Mansarovar Extension, Jaipur',
+    city: 'Jaipur',
+    state: 'Rajasthan',
+    areaSqFt: 3000,
+    bedrooms: undefined,
+    bathrooms: undefined,
+    parking: undefined,
+    facing: 'North-East Corner Plot',
+    status: 'Ready to Move',
+    possessionDate: 'Immediate Registry',
+    reraNumber: 'RAJ/P/2024/1890 (Verified)',
+    featured: true,
+    heroImage: 'https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1600&auto=format&fit=crop&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1600&auto=format&fit=crop&q=80',
+      'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1600&auto=format&fit=crop&q=80',
+      'https://images.unsplash.com/photo-1513694203232-719a280e022f?w=1600&auto=format&fit=crop&q=80'
+    ],
+    editorialNote: 'A clean-title freehold residential plot in a fully walled township featuring wide asphalt boulevards, underground utility cabling, and lush native flora.',
+    description: 'Craft your dream ancestral bungalow or high-yield rental residence on this prime corner plot in Mansarovar Extension. Fully JDA approved with 100% clear legal titles, 40-foot wide avenue roads, landscaped perimeter security, and complete underground electrification and water lines ready for immediate construction.',
+    architecturalHighlights: [
+      'JDA Approved with instant lease deed registry and demarcation',
+      'Dual-side wide corner road frontages (40 ft. & 30 ft.)',
+      'Underground electrical cabling, piped gas, and fiber-optic conduits',
+      'Lush avenue tree plantations and landscaped central park of 2 acres'
+    ],
+    amenities: [
+      'JDA Approved Scheme',
+      'Gated Boundary with Guardhouse',
+      '40-Foot Wide Blacktop Roads',
+      'Underground Electrification',
+      '2-Acre Central Landscaped Park',
+      'Borewell & Water Storage Tank',
+      'Street Lighting & Storm Drains'
+    ],
+    nearbyLandmarks: [
+      { name: 'Mansarovar Metro Station', distance: '4.2 km', category: 'Metro' },
+      { name: 'St. Wilfred College Campus', distance: '2.0 km', category: 'Education' },
+      { name: 'Apex Multi-Specialty Hospital', distance: '3.6 km', category: 'Hospital' },
+      { name: 'Ring Road Interchange', distance: '5.0 km', category: 'Business' }
+    ]
+  },
+  {
+    id: 'radhe-prop-07',
+    title: 'The Malviya Royal Duplex Manor',
+    slug: 'the-malviya-royal-duplex-manor-malviya-nagar',
+    tagline: 'Timeless Heritage Craftsmanship in an Established Aristocratic Sector',
+    category: 'residential',
+    type: 'Luxury Villa',
+    price: 52000000,
+    priceDisplay: '₹ 5.20 Cr',
+    pricePerSqFt: '₹ 12,380 / sq.ft.',
+    location: 'Malviya Nagar',
+    address: 'Near Calgiri Eye Hospital & JLN Marg, Malviya Nagar, Jaipur',
+    city: 'Jaipur',
+    state: 'Rajasthan',
+    areaSqFt: 4200,
+    carpetAreaSqFt: 3650,
+    bedrooms: 5,
+    bathrooms: 5,
+    parking: 3,
+    facing: 'North Facing',
+    furnishing: 'Semi-Furnished',
+    status: 'Ready to Move',
+    possessionDate: 'Ready for Occupancy',
+    reraNumber: 'RAJ/P/2023/1560 (Verified)',
+    featured: false,
+    heroImage: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1600&auto=format&fit=crop&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1600&auto=format&fit=crop&q=80',
+      'https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?w=1600&auto=format&fit=crop&q=80',
+      'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1600&auto=format&fit=crop&q=80'
+    ],
+    editorialNote: 'A celebrated South Jaipur enclave moments away from World Trade Park and Jawaharlal Nehru Marg.',
+    description: 'An architectural tribute to royal Jaipur symmetry, featuring sandstone carved balustrades, polished Jodhpur stone accents, double-height drawing room, and private landscaped rear barbecue courtyard.',
+    architecturalHighlights: [
+      'Hand-carved pink sandstone exterior accents inspired by Rajasthani jharokhas',
+      'Grand marble central staircase with brass banisters',
+      'Dedicated puja mandir pavilion designed per strict Vastu coordinates',
+      'Expansive master suite with private morning sun deck'
+    ],
+    amenities: [
+      'Private Terrace Garden',
+      'Automated Security Gates',
+      'Italian Statuario Marble',
+      'Covered 3-Car Portico',
+      'Solar Panel Array (10 kW)',
+      'Water Softener Plant',
+      'Servants Quarters'
+    ],
+    nearbyLandmarks: [
+      { name: 'World Trade Park & Gaurav Tower', distance: '1.4 km', category: 'Leisure' },
+      { name: 'Apex Hospital Malviya Nagar', distance: '900 m', category: 'Hospital' },
+      { name: 'Jaipur International Airport', distance: '4.8 km', category: 'Airport' },
+      { name: 'MNIT Campus', distance: '2.2 km', category: 'Education' }
+    ]
+  },
+  {
+    id: 'radhe-prop-08',
+    title: 'The Meridian Commercial Galleria',
+    slug: 'the-meridian-commercial-galleria-c-scheme',
+    tagline: 'High-Visibility Flagship Retail & Boutique Workspace',
+    category: 'commercial',
+    type: 'Retail Space',
+    price: 42000000,
+    priceDisplay: '₹ 4.20 Cr',
+    pricePerSqFt: '₹ 21,000 / sq.ft.',
+    location: 'C-Scheme',
+    address: 'Panch Batti Intersection & MI Road Belt, C-Scheme, Jaipur',
+    city: 'Jaipur',
+    state: 'Rajasthan',
+    areaSqFt: 2000,
+    carpetAreaSqFt: 1800,
+    bedrooms: undefined,
+    bathrooms: 2,
+    parking: 2,
+    facing: 'Main Boulevard Frontage',
+    furnishing: 'Unfurnished',
+    status: 'Ready to Move',
+    possessionDate: 'Ready for Fitouts',
+    reraNumber: 'RAJ/P/2023/1822 (Verified)',
+    featured: false,
+    heroImage: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1600&auto=format&fit=crop&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1600&auto=format&fit=crop&q=80',
+      'https://images.unsplash.com/photo-1497366216548-37526070297c?w=1600&auto=format&fit=crop&q=80'
+    ],
+    editorialNote: 'A marquee retail jewel situated at the heart of Jaipur’s most prestigious luxury shopping and culinary promenade.',
+    description: 'Ground floor corner retail showcase with 50 feet of continuous floor-to-ceiling glass display frontage. Positioned along prime vehicular and pedestrian circulation in C-Scheme, capturing high-net-worth local and tourist traffic.',
+    architecturalHighlights: [
+      '50-foot seamless frameless glass facade with maximum footfall impact',
+      '15-foot clear ceiling heights allowing dramatic mezzanine installation',
+      'Dedicated independent utility shafts and HVAC connections',
+      'Direct customer drop-off portico and front valet parking zone'
+    ],
+    amenities: [
+      '50-Ft. Glass Facade',
+      'Dedicated Valet Zone',
+      '100% Power Redundancy',
+      'High-Speed Fiber Conduits',
+      '24/7 Security & CCTV',
+      'Fire Suppression Sprinklers'
+    ],
+    nearbyLandmarks: [
+      { name: 'Panch Batti / MI Road', distance: '300 m', category: 'Leisure' },
+      { name: 'Raj Mandir Cinema', distance: '600 m', category: 'Leisure' },
+      { name: 'Central Park', distance: '1.2 km', category: 'Leisure' },
+      { name: 'Jaipur Junction Railway Station', distance: '2.5 km', category: 'Business' }
+    ]
+  },
+  {
+    id: 'radhe-prop-09',
+    title: 'The Amber Crest Luxury Country Villa',
+    slug: 'the-amber-crest-luxury-country-villa-kukus',
+    tagline: 'Secluded Foothill Sanctuary of Privacy and Aristocratic Leisure',
+    category: 'investment',
+    type: 'Luxury Villa',
+    price: 75000000,
+    priceDisplay: '₹ 7.50 Cr',
+    pricePerSqFt: '₹ 11,538 / sq.ft.',
+    location: 'Delhi-Jaipur Highway Corridor',
+    address: 'Near Kukas Resort Belt & Amber Fort, Jaipur',
+    city: 'Jaipur',
+    state: 'Rajasthan',
+    areaSqFt: 6500,
+    carpetAreaSqFt: 5600,
+    bedrooms: 6,
+    bathrooms: 7,
+    parking: 4,
+    facing: 'Aravalli Hills Panorama Facing',
+    furnishing: 'Fully Furnished',
+    status: 'Ready to Move',
+    possessionDate: 'Immediate',
+    reraNumber: 'RAJ/P/2022/1908 (Verified)',
+    featured: false,
+    heroImage: 'https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=1600&auto=format&fit=crop&q=80',
+    gallery: [
+      'https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=1600&auto=format&fit=crop&q=80',
+      'https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=1600&auto=format&fit=crop&q=80',
+      'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1600&auto=format&fit=crop&q=80'
+    ],
+    editorialNote: 'A trophy country retreat nestled against the dramatic backdrop of the Aravalli hills, offering resort-grade luxury and lucrative luxury-rental yield.',
+    description: 'Spread over half an acre of private landscaped grounds, this 6 BHK country manor features an expansive infinity-edge swimming pool facing the mountain ridge, private gazebos, an organic fruit orchard, and a standalone guest villa. Unrivaled peace just 30 minutes from the heart of Jaipur.',
+    architecturalHighlights: [
+      'Breathtaking uninterrupted vistas of the ancient Aravalli ridges',
+      'Full-size heated outdoor infinity pool with poolside sunken bar',
+      'Independent 2-bedroom guest cottage and staff quarters on-site',
+      'Private organic citrus grove and manicured celebration lawns'
+    ],
+    amenities: [
+      'Heated Infinity Pool',
+      '0.5 Acre Private Grounds',
+      'Guest Cottage Suite',
+      'Poolside Gazebo & Bar',
+      'Organic Fruit Orchard',
+      '4-Car Covered Portico',
+      'Solar Microgrid Installation'
+    ],
+    nearbyLandmarks: [
+      { name: 'Amber Fort & Palace', distance: '8.5 km', category: 'Leisure' },
+      { name: 'JW Marriott Resort & Spa', distance: '3.2 km', category: 'Leisure' },
+      { name: 'Delhi-Mumbai Expressway Access', distance: '12.0 km', category: 'Business' },
+      { name: 'C-Scheme Downtown Jaipur', distance: '22.0 km', category: 'Business' }
+    ]
+  }
+];
+
+export const JAIPUR_LOCATIONS = [
+  'All Locations',
+  'Civil Lines',
+  'C-Scheme',
+  'Vaishali Nagar',
+  'Jagatpura',
+  'Malviya Nagar',
+  'Tonk Road',
+  'Mansarovar Extension',
+  'Delhi-Jaipur Highway Corridor'
+];
+
+export const PROPERTY_TYPES = [
+  'All Types',
+  'Luxury Villa',
+  'Sky Penthouse',
+  'Premium Apartment',
+  'Residential Plot',
+  'Commercial Office',
+  'Retail Space'
+];

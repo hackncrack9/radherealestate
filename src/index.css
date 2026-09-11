@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    color-scheme: light;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background-color: #FAF8F5;
+    color: #0D1117;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  /* Custom scrollbar for clean luxury aesthetic */
+  ::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #F4F0E8;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #C5A880;
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #A88B63;
+  }
+}
+
+@layer utilities {
+  /* Subtle glassmorphism for luxury overlay without being tacky */
+  .luxury-glass-dark {
+    background: rgba(13, 17, 23, 0.75);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(197, 168, 128, 0.15);
+  }
+
+  .luxury-glass-light {
+    background: rgba(250, 248, 245, 0.85);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-bottom: 1px solid rgba(229, 224, 216, 0.8);
+  }
+
+  .gold-gradient-text {
+    background: linear-gradient(135deg, #C5A880 0%, #E8D3B9 50%, #B89564 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .gold-border-gradient {
+    border-image: linear-gradient(to bottom, #C5A880, transparent) 1;
+  }
+}
