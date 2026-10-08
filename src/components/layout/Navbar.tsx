@@ -81,7 +81,7 @@ export const Navbar: React.FC = () => {
                   <Link
                     key={link.name}
                     to={link.path}
-                    className={`text-xs uppercase tracking-widest font-medium transition-colors relative py-1 ${
+                    className={`nav-link-animated text-xs uppercase tracking-widest font-medium transition-colors relative py-1 ${
                       isActive ? activeLinkColor : linkColor
                     }`}
                   >

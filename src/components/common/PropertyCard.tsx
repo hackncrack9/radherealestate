@@ -12,7 +12,7 @@ interface PropertyCardProps {
 export const PropertyCard: React.FC<PropertyCardProps> = ({ property, className = '' }) => {
   return (
     <article
-      className={`group relative flex flex-col bg-white border border-brand-sand/70 hover:border-brand-gold/60 transition-all duration-500 hover:shadow-luxury-hover overflow-hidden ${className}`}
+      className={`property-card-animated group relative flex flex-col bg-white border border-brand-sand/70 hover:border-brand-gold/60 transition-all duration-500 hover:shadow-luxury-hover overflow-hidden ${className}`}
     >
       {/* Image Container with Zoom & Badges */}
       <div className="relative aspect-[4/3] w-full overflow-hidden bg-brand-cream">

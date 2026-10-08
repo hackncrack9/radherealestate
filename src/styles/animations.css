@@ -1,0 +1,45 @@
+@keyframes soft-float {
+  0%, 100% { transform: translate3d(0, 0, 0); }
+  50% { transform: translate3d(0, -12px, 0); }
+}
+
+@keyframes gold-shimmer {
+  0% { background-position: 180% center; }
+  100% { background-position: -30% center; }
+}
+
+@keyframes ambient-drift {
+  0%, 100% { transform: translate3d(-4%, -2%, 0) scale(1); }
+  50% { transform: translate3d(4%, 3%, 0) scale(1.08); }
+}
+
+@keyframes reveal-line {
+  from { transform: scaleX(0); transform-origin: left; }
+  to { transform: scaleX(1); transform-origin: left; }
+}
+
+.animate-soft-float {
+  animation: soft-float 5s ease-in-out infinite;
+}
+
+.animate-gold-shimmer {
+  background-size: 200% auto;
+  animation: gold-shimmer 4s linear infinite;
+}
+
+.animate-ambient-drift {
+  animation: ambient-drift 14s ease-in-out infinite;
+}
+
+.animate-reveal-line {
+  animation: reveal-line 900ms cubic-bezier(.21,.47,.32,.98) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}

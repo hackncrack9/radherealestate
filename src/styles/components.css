@@ -1,0 +1,89 @@
+/* Reusable editorial motion accents for the public-facing experience. */
+.hero-ambient::before {
+  content: '';
+  position: absolute;
+  width: 48rem;
+  height: 48rem;
+  top: -24rem;
+  right: -18rem;
+  border-radius: 999px;
+  background: radial-gradient(circle, rgba(197, 168, 128, .2), transparent 65%);
+  filter: blur(10px);
+  pointer-events: none;
+}
+
+.hero-ambient::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  opacity: .35;
+  pointer-events: none;
+  background-image: linear-gradient(rgba(255,255,255,.06) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.06) 1px, transparent 1px);
+  background-size: 64px 64px;
+  mask-image: linear-gradient(to bottom, black, transparent 70%);
+}
+
+.nav-link-animated::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -3px;
+  height: 1px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 350ms ease;
+}
+
+.nav-link-animated:hover::after,
+.nav-link-animated:focus-visible::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.property-card-animated {
+  isolation: isolate;
+  transform: translateZ(0);
+}
+
+.property-card-animated::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border: 1px solid rgba(197, 168, 128, .7);
+  opacity: 0;
+  transform: scale(.985);
+  transition: opacity 450ms ease, transform 450ms ease;
+}
+
+.property-card-animated:hover::before {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.property-card-animated:hover {
+  transform: translateY(-7px);
+}
+
+.cta-sheen {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.cta-sheen::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background: linear-gradient(105deg, transparent 35%, rgba(255,255,255,.28) 50%, transparent 65%);
+  transform: translateX(-130%);
+  transition: transform 650ms ease;
+}
+
+.cta-sheen:hover::after,
+.cta-sheen:focus-visible::after {
+  transform: translateX(130%);
+}

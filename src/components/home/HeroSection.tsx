@@ -7,7 +7,7 @@ export const HeroSection: React.FC = () => {
   const shouldReduceMotion = useReducedMotion();
 
   return (
-    <section className="relative h-screen min-h-[680px] w-full flex items-center justify-center overflow-hidden bg-brand-dark">
+    <section className="hero-ambient relative h-screen min-h-[680px] w-full flex items-center justify-center overflow-hidden bg-brand-dark">
       {/* Background Image with Slow Parallax & Scale */}
       <motion.div
         initial={shouldReduceMotion ? { scale: 1 } : { scale: 1.08 }}
@@ -48,7 +48,7 @@ export const HeroSection: React.FC = () => {
           className="font-serif text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-normal text-white tracking-tight leading-[1.08] mb-6 drop-shadow-md"
         >
           Find a Place <br className="hidden sm:inline" />
-          <span className="italic font-normal gold-gradient-text">Worth Calling Home.</span>
+          <span className="italic font-normal gold-gradient-text animate-gold-shimmer">Worth Calling Home.</span>
         </motion.h1>
 
         {/* Supporting Sentence */}
@@ -93,7 +93,7 @@ export const HeroSection: React.FC = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.2, duration: 1 }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2 pointer-events-none text-brand-ivory/60"
+          className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2 pointer-events-none text-brand-ivory/60 animate-soft-float"
       >
         <span className="text-[9px] uppercase tracking-[0.25em] font-light">Scroll to Explore</span>
         <motion.div
